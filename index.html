@@ -1,8 +1,6 @@
 <html>
 	<head>
-		<script>
-			//Get all the DIVs which have at least classes a,b,c and d - and give them background-color which is blue
-		</script>
+		
 		<style>
 			
 			div {
@@ -22,5 +20,12 @@
 		<div class="a b c d e"></div>
 		
 		<input class="a b c d e" type="text"/>
+		<script>
+			var arr= document.querySelectorAll("div.a.b.c.d");
+			for (var i=0;i<arr.length;i++) {
+				arr[i].style.backgroundColor = "blue";
+			}
+			//Get all the DIVs which have at least classes a,b,c and d - and give them background-color which is blue
+		</script>
 	</body>
 </html>
